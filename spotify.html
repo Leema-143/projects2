@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1DB954;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #1DB954;
+}
+
+/* Main Container */
+.container {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #181818;
+    padding: 15px;
+    border-radius: 12px;
+    width: 180px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background-color: #282828;
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Spotify</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Search</a>
+            <a href="#">Your Library</a>
+            <a href="#">Profile</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- Recently Played -->
+        <section>
+            <h2>Recently Played</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/5JoPeWHkKJg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBlIW3KdjeDiexVRPYOMFOiELEPtg">
+                    <h3>Album 1</h3>
+                    <p>Artist 1</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://c.saavncdn.com/177/Dude-Telugu-Original-Motion-Picture-Soundtrack-Telugu-2025-20251029174900-500x500.jpg">
+                    <h3>Album 2</h3>
+                    <p>Artist 2</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://a10.gaanacdn.com/gn_img/albums/VdNW0Mbo5e/dNW0XPRQWo/size_m.webp">
+                    <h3>Album 3</h3>
+                    <p>Artist 3</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://a10.gaanacdn.com/gn_img/song/koMWQBbqLE/MWQBRwQEbq/size_m_1532870970.webp">
+                    <h3>Album 4</h3>
+                    <p>Artist 4</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/chmbSYCjLmY/maxresdefault.jpg">
+                    <h3>Album 5</h3>
+                    <p>Artist 5</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Made for You -->
+        <section>
+            <h2>Made For You</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://c.saavncdn.com/182/Surya-S-o-Krishnan-Telugu-2008-20190822124405-500x500.jpg">
+                    <h3>Daily Mix 1</h3>
+                    <p>Based on your taste</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/FR3Febey_lI/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBKsSzRXWEoDsm0Cn-M18AerG6IEA">
+                    <h3>Daily Mix 2</h3>
+                    <p>Trending songs</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-uVJOt9JCi8G-y1CZqn09ZxATVbwTXD_PrQ&s">
+                    <h3>Chill Hits</h3>
+                    <p>Relax and enjoy</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/Krq_XaqT_r4/maxresdefault.jpg">
+                    <h3>Workout Mix</h3>
+                    <p>Boost your energy</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
